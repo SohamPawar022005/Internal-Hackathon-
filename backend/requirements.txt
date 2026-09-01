@@ -1,0 +1,24 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+sentence-transformers
+scikit-learn
+numpy
+pandas
+langdetect
+geopandas
+shapely
+pillow
+python-dotenv
+pydantic
+pydantic-settings
+python-multipart
+requests
+
+# ── Voice intake: ASR / TTS backends (all optional, fallback chain) ──
+faster-whisper           # local offline ASR  (ASR_BACKENDS=whisper)
+SpeechRecognition        # free Google Web Speech ASR (ASR_BACKENDS=google)
+pydub                    # transcode browser webm/ogg for the google backend (needs ffmpeg)
+gTTS                     # free Google Translate TTS (TTS_BACKENDS=gtts)
+deep-translator          # fallback text translation when Sarvam /translate is unavailable

@@ -1,0 +1,77 @@
+# ─────────────────────────────────────────────────────────────
+#  NIVARAN — root .gitignore (backend: Python, frontend: Node)
+# ─────────────────────────────────────────────────────────────
+
+# ── Secrets / local config ───────────────────────────────────
+.env
+.env.*
+!.env.example
+*.local
+
+# ── Python (backend) ─────────────────────────────────────────
+backend/venv/
+backend/.venv/
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.ipynb_checkpoints/
+
+# ── Node (frontend) ──────────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.vite/
+.eslintcache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── Databases / data dumps ───────────────────────────────────
+*.sqlite3
+*.sqlite
+*.db
+pgdata/
+postgres-data/
+
+# ── ML model / cache artifacts ───────────────────────────────
+# (faster-whisper / huggingface models pulled at runtime)
+models/
+*.bin
+*.pt
+*.onnx
+.cache/
+
+# ── Logs ─────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Editors / OS ─────────────────────────────────────────────
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── Misc ─────────────────────────────────────────────────────
+*.tmp
+*.bak
+tmp/
+scratch/

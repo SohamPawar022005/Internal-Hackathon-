@@ -1,0 +1,26 @@
+{
+  "// note": "Keeps the editor's file watcher + search off the heavy generated dirs so VS Code stops choking / showing thousands of phantom changes.",
+  "files.watcherExclude": {
+    "**/venv/**": true,
+    "**/.venv/**": true,
+    "**/node_modules/**": true,
+    "**/__pycache__/**": true,
+    "**/frontend/dist/**": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.ruff_cache/**": true,
+    "**/.pytest_cache/**": true
+  },
+  "search.exclude": {
+    "**/venv": true,
+    "**/node_modules": true,
+    "**/__pycache__": true,
+    "**/frontend/dist": true,
+    "**/package-lock.json": true
+  },
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true
+  },
+  "git.ignoreLimitWarning": true
+}
